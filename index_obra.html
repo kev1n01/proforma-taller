@@ -1,0 +1,215 @@
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Proforma mano de obra</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<span><img width="100px" src="logo_taller.png"><input type="file" accept="image/*"></span>
+			<address contenteditable>
+				<span class="info">
+                    <p class="bold">HERMANOS FLORES S.A.</p>
+                    <p class="bold">SECTOR LAS LOMAS - CHUNAPAMPA - HUÁNUCO</p>
+                    <p class="bold">Gerencia: 957235173 </p>
+                    <p class="bold">Oficina:  978610524 - 933865935</p>
+                </span>
+                
+			</address>
+			
+			<table class="meta" >
+				<div class="invoice invoice-action">
+					<a class ="enlace enlace-proforma" href="index.html">Repuestos</a>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-printer action-print" data-toggle="tooltip" data-placement="top" data-original-title="Reply"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+				</div>
+				<tr>
+					<th style=" float:right"><span >N°</span></th>
+					<td style=" width: 40%; "><span contenteditable> </span></td>
+				</tr>
+				<tr>
+					<th style="float:right"><span >Fecha</span></th>
+					<td style=" width: 40%; "><span contenteditable > </span></td>
+				</tr>
+				<tr style="display: none;">
+					<th><span >Monto </span></th>
+					<td><span id="prefix" contenteditable>S/. </span><span>600.00</span></td>
+				</tr>
+			</table>
+            
+		</header>
+
+        <div class="info-general">
+            <h5>Proforma de Mantenimiento</h5>
+            <div class="info-cliente">
+                <p>1. Información del cliente</p>
+                <div class="inputs-cliente">
+						<table style="margin: 7px;">
+							<tr>
+								<th style=" width: 70px;"><span>Señor(a)</span></th>
+								<td><span contenteditable> </span></td>
+							</tr>
+							<tr>
+								<th><span >Razón Social</span></th>
+								<td><span contenteditable> </span></td>
+							</tr>
+							<tr>
+								<th><span >Dirección</span></th>
+								<td><span contenteditable> </span></td>
+							</tr>
+						</table>
+						<table style="margin: 7px;  max-width: 30%;" >
+							<tr>
+								<th style=" width: 50px;"><span>DNI</span></th>
+								<td><span contenteditable> </span></td>
+							</tr>
+							<tr>
+								<th><span >RUC</span></th>
+								<td><span contenteditable> </span></td>
+							</tr>
+							<tr>
+								<th><span >Teléfono</span></th>
+								<td><span contenteditable> </span></td>
+							</tr>
+						</table>
+                </div>
+            </div>
+            <!-- <div class="info-servicios">
+                <p>2. Tipos de Servicios</p>
+                <table style="margin: 5px;">
+					<thead>
+						<tr>
+							<th style=" width: 20%;"></th>
+							<th></th>
+							<th></th>
+							<th style=" width: 18%;"></th>
+							<th style=" width: 20%;"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Scaneo<span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Dirección<span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Pintado<span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Lavado<span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Alquiler camioneta <span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+						</tr>
+						<tr>
+							<td>Reparación  Motor<span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Freno<span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Copa de muelle<span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Copado <span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Auxilio mecánico <span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+						</tr>
+						<tr>
+							<td>Reparación de Caja <span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Sistema eléctrico <span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Engrasado<span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Limpieza tanque <span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Venta de repuestos <span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+						</tr>
+						<tr>
+							<td>Suspensión<span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Planchado<span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Cambio de aceite <span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Alineamiento<span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+							<td>Otros<span style = "float: right;"><input  type="checkbox" name="" id=""></span></td>
+						</tr>
+						<tr></tr>
+						
+						
+					</tbody>
+				</table>
+            </div> -->
+            <div class="info-vehiculo">
+                <p>2. Información del Vehiculo</p>
+                <div class="inputs-cliente">
+					<table style="margin: 7px;">
+						<tr>
+							<th style=" width: 70px;"><span>Marca</span></th>
+							<td><span contenteditable> </span></td>
+						</tr>
+						<tr>
+							<th><span >Modelo</span></th>
+							<td><span contenteditable> </span></td>
+						</tr>
+						
+					</table>
+					<table style="margin: 7px;  max-width: 30%;" >
+						<tr>
+							<th style=" width: 50px;"><span>Color</span></th>
+							<td><span contenteditable> </span></td>
+						</tr>
+						<tr>
+							<th><span >Placa</span></th>
+							<td><span contenteditable> </span></td>
+						</tr>
+						
+					</table>
+					<table style="margin: 7px;  max-width: 30%;" >
+						<tr>
+							<th style=" width: 50px;"><span>Año</span></th>
+							<td><span contenteditable> </span></td>
+						</tr>
+						<tr>
+							<th><span >ODO</span></th>
+							<td><span contenteditable> </span></td>
+						</tr>
+						
+					</table>
+			</div>
+            </div>
+        </div>
+
+		<article>
+			<p>3. Lista de servicios / mano de obra</p><br>
+			<table class="inventory jobs">
+				<thead>
+					<tr>
+						<th style="display: none;"><span >DESCRIPCIÓN</span></th>
+						<th><span >DESCRIPCIÓN</span></th>
+						<th style=" width: 15%;"><span >V.TOTAL</span></th>
+						<th style=" width: 10%; display:none;"><span >CANTIDAD</span></th>
+						<th style=" width: 10%; display:none;"><span >V.TOTAL</span></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td ><a class="cut">-</a><span contenteditable > </span></td>
+						<td style="display: none;"><span contenteditable> </span></td>
+						<td><span data-prefix> </span><span contenteditable> </span></td>
+						<td style="display: none;"><span contenteditable>1</span></td>
+						<td style="display: none;"><span data-prefix>S/ </span><span>600.00</span></td>
+					</tr>
+					
+				</tbody>
+			</table>
+			<a class="add-job" >+</a>
+			<table class="balance">
+				<tr>
+					<th style="float: right;"><span >Sub Total</span></th>
+					<td style="width:40%;"><span data-prefix>S/ </span><span>600.00</span></td>
+				</tr>
+				<tr>
+					<th style="float: right;"><span >Descuento</span></th>
+					<td><span data-prefix>S/ </span><span contenteditable> </span></td>
+				</tr>
+				<tr>
+					<th style="float: right;"><span >Total</span></th>
+					<td><span data-prefix>S/ </span><span>600.00</span></td>
+				</tr>
+			</table>
+		</article>
+
+			<div class="footer">
+				<p style="font-size: 73%; font-weight: bold;">
+					En caso de emergencia contáctenos, que estamos para ayudarlo,
+					pofesionalismo y calidad de trato para clientes de calidad
+				</p>
+			</div>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="index.js"></script>
+
+	</body>
+
+</html>
