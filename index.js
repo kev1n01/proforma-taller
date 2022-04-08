@@ -162,18 +162,7 @@ function updateInvoice() {
 	// set balance and meta balance
 	cells[2].innerHTML = document.querySelector('table.meta tr:last-child td:last-child span:last-child').innerHTML = parsePrice(total - parseFloatHTML(cells[1]));
 
-	// update prefix formatting
-	// ========================
-
-	// var prefix = document.querySelector('#prefix').innerHTML;
-	// for (a = document.querySelectorAll('[data-prefix]'), i = 0; a[i]; ++i)
-	// 	a[i].innerHTML = prefix;
-
-	// update price formatting
-	// =======================
-
-	// for (a = document.querySelectorAll('span[data-prefix] + span'), i = 0; a[i]; ++i)
-	// 	if (document.activeElement != a[i]) a[i].innerHTML = parsePrice(parseFloatHTML(a[i]));
+	
 }
 
 /* On Content Load
