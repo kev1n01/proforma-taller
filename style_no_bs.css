@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.border-line {
+    height: 29.7cm;
+    margin: 1rem;
+    padding: 2rem;
+    border: 1px solid rgb(44, 44, 44);
+}
+
+.flex {
+    display: flex;
+}
+
+.logo_img {
+    width: 10%;
+    padding: 1rem;
+    margin-left: 25px;
+}
+
+.info-mechanic {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.date {
+    text-align: center;
+    width: 20%;
+    padding-top: 30px; 
+}
+
+.date p{
+    padding-bottom: 10px;
+}
+
+.border-date , .border-time{
+    border: 1px solid rgb(39, 39, 39);
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.border {
+    border-width: 1px solid rgb(39, 39, 39);
+}
+
+.fw-sb{
+    font-weight: 550;
+}
+
+.fw-b{
+    font-weight: bold;
+}
+
+.fs-1{
+    font-size: 25px;
+}
+
+.fs-2{
+    font-size: 20px;
+}
+.fs-3{
+    font-size: 17px;
+}
+
+.table-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table .border-td , .table .border-th {
+    padding: 8px;
+    border: 1px solid rgb(39, 39, 39);
+}
+
+.table-list td , .table-list th {
+    padding: 12px 15px;
+    border: 1px solid rgb(39, 39, 39);
+    text-align: center;
+}
+
+.ps-2{
+    padding-left: 60px;
+}
+
+.ps-1{
+    padding-left: 30px;
+}
